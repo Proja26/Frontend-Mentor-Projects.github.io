@@ -1,0 +1,209 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css?family=Outfit:wght@400;700|Young+Serif&display=swap');
+
+/* Resetting CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Definitions */
+:root {
+    --primary-nutmeg-color: hsl(14, 45%, 36%);
+    --primary-darkRaspberry-color: hsl(332, 51%, 32%);
+    --secondary-white-color: hsl(0, 0%, 100%);
+    --secondary-roseWhite-color: hsl(330, 100%, 98%);
+    --secondary-eggshell-color: hsl(30, 54%, 90%);
+    --secondary-lightGrey-color: hsl(30, 18%, 87%);
+    --secondary-wengeBrown-color: hsl(30, 10%, 34%);
+    --secondary-darkCharcoal-color: hsl(24, 5%, 18%);
+}
+
+/* Body Styles */
+body {
+    background-color: var(--secondary-eggshell-color);
+    font-family: 'Outfit', serif;
+    font-size: 16px;
+    /* height: 80vh; */
+}
+
+h1, h2, h3 {
+    font-family: 'Young Serif', sans-serif;
+}
+
+/* Container Styles */
+.container {
+    background-color: var(--secondary-white-color);
+    width: 700px;
+    margin: 50px auto;
+    padding: 30px 30px 5px;
+    border-radius: 10px;
+    max-width: 1440px;
+}
+
+/* Image Styles */
+img {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat; 
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+li::marker {
+    color: var(--primary-darkRaspberry-color);
+    font-weight: bold;
+}
+
+/* Main Text Styles */
+.main-text-side {
+    margin: 20px 0;
+}
+
+.main-h1 {
+    color: var(--secondary-darkCharcoal-color);
+    margin: 30px auto; /* Adjusted margin for better spacing */
+    text-align: start;
+    font-size: 35px;
+}
+
+.main-text-side p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+/* Strong Text Styles */
+strong {
+    font-weight: bold;
+    color: var(--secondary-darkCharcoal-color);
+}
+
+/* Preparation Styles */
+.preparation {
+    background-color: var(--secondary-roseWhite-color);
+    font-size: 14px;
+    padding: 20px;
+    margin: 5px 10px;
+}
+
+.main-h4 {
+    color: var(--primary-darkRaspberry-color);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.preparation ul {
+    padding-left: 10px;
+}
+
+.preparation ul li {
+    margin: 5px 0 5px 15px; /* Adjusted margin for better spacing */
+    padding: 5px 10px;
+}
+
+/* All Third Level Headings Styles */
+.all-h3 {
+    color: var(--primary-nutmeg-color);
+    font-size: 25px;
+    text-align: start;
+    margin: 20px;
+}
+
+/* Ingredients Styles */
+.ingredients {
+    border-bottom: 1px solid #e7e2e2;
+    margin-bottom: 20px;
+}
+
+.ingredients h3 {
+    margin-top: 30px;
+}
+
+.ingredients ul {
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.ingredients ul li {
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.ingredients ul li:last-child {
+    margin-bottom: 30px;
+}
+
+/* Instructions Styles */
+.instructions h3 {
+    margin: 30px 0 50px;
+}
+
+.instructions {
+    font-size: 12px;
+}
+
+.instructions ol{
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.instructions ol li{
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+.instructions {
+    border-bottom: 1px solid #e7e2e2;
+}
+
+.instructions ol li:last-child {
+    margin-bottom: 30px;
+}
+
+/* Nutrition Information Styles */
+.nutrition h3 {
+    margin-top: 30px;
+}
+
+.nutrition p {
+    font-size: 16px;
+    margin: 5px 0;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+.nutrition .calories {
+    border-bottom: 1px solid #e7e2e2;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.nutrition .calories:last-child {
+    border-bottom: none;
+    margin-bottom: none;
+    padding-bottom: none;
+}
+
+.nutrition .calories pre{
+    font-family: 'Outfit', serif;
+}
+
+.nutrition .calories span {
+    color: var(--primary-darkRaspberry-color);
+    font-weight: bold;
+}
+
+/* Media Query for Screens up to 375px */
+@media(max-width: 375px) {
+    .container {
+        width: 100%;
+        margin: 0;
+        padding: 0; /* Adjusted padding for better appearance */
+        border-radius: 0;
+        height: 100%;
+    }
+}
